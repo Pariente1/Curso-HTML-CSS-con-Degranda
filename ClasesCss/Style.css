@@ -1,0 +1,16 @@
+/* Por elemento*/
+p{
+    color: brown;
+}
+
+/* Por clase: Prioridad 2 */
+.Clase1 {
+    color: yellow;
+}
+
+/* Por ID: Prioridad 1 */
+
+#Parrafo1 {
+    color: aquamarine;
+}
+
