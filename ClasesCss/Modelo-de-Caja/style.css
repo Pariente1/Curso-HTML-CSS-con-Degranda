@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+    box-sizing: border-box; /*La propiedad "box-sizing" establece cómo se calcula el ancho y la altura de un elemento HTML, incluyendo su borde y relleno. Al establecer el valor en "border-box", se indica que el tamaño total del elemento debe incluir el ancho del borde y el relleno, en lugar de agregarlos al tamaño total del elemento */
     padding: 0;
     margin: 0;
 }
