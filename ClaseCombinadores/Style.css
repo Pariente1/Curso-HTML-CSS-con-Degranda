@@ -1,0 +1,29 @@
+
+/* 
+h2 + p {
+    color: red;
+}
+
+Se aplica cuando se usa (+) al adyacent sibling o tambien llamado hermano cercano o tambien al hermano que esta debajo de la etiqueta principal. */
+
+
+/* Para crea la (~) el código ASCII es alt+126*/
+
+/* h2 ~ p {
+    color: red;
+} */
+
+/* Se aplica a todas las etiquetas de p que tenga h2. A este metodo se le llama hermano general o tambien llamado general sibling y se usa (~). */
+
+/* 
+div > p {
+    color: red;
+} */
+
+/* La etiqueta p tiene que ser hijo directo de una etiqueta div. Para esto de usa el (>). A eso se le conoce como hijo directo */
+/* 
+div p {
+    color: red;
+} */
+
+/* Para que sea desendiente simplemente solamente se pone un espacio, es simplemente todos los hijos que tenga esa etiqueta */
