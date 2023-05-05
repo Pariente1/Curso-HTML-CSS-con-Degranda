@@ -1,0 +1,15 @@
+body {
+    font-size: 20px;
+}
+
+main {
+    font-size: 1em;
+}
+
+.text-container {
+    font-size: 1.5em;
+}
+
+.text-container div {
+    font-size: 1.5em;
+}
