@@ -99,5 +99,80 @@ p{
 La mejor recomendacion es usar siempre rem a la hora de crear nuestros proyectos.
 
 > nota: Es muy importante usar rem para las fuentes ya que hay gente con problemas de vista que puede que la letra sea muy pequeña para ellos y poco legible. Y al usar rem, damos la oportunidad de cambiar el tamaño de fuente desde el navegador de su dispositivo. Algo que no es posible hacer si usamos medidas absolutas.
+---
 
+
+# vh/vw y min/max width/height
+
+### vh y vw
+"vw" y "vh" son unidades de medida en CSS que se utilizan para dimensionar elementos de manera proporcional al tamaño de la ventana del navegador. "vw" representa el 1% del ancho total de la ventana del navegador, mientras que "vh" representa el 1% de la altura total de la ventana del navegador.
+
+Estas unidades son útiles para crear diseños responsivos y escalables, ya que permiten dimensionar elementos de manera proporcional al tamaño de la ventana del navegador. Sin embargo, es importante tener en cuenta que estas unidades pueden verse afectadas por las barras de desplazamiento del navegador y se deben asegurar de que los elementos dimensionados con "vw" y "vh" sean responsivos y se adapten correctamente a distintos tamaños de pantalla.
+
+```css
+main{
+    width: 85vw; /* 85% */
+    height: 80vh; /* 80% */
+}
+```
+
+### min/max height/width
+
+Min-height: se utiliza para definir la altura mínima de un elemento dado. Impide que el valor de la propiedad height llegue a ser más pequeña que la especificada en la altura mínima ( min-height ). Se refiere a la altura del bloque contenedor.
+
+Max-height: se utiliza para definir la altura máxima de un elemento dado. Impide que el valor de la altura pueda llegar a ser más grande que la de max-height . Porcentajes: se refiere a la altura del bloque contenedor.
+
+Min-width: se usa para determinar la anchura mínima de un elemento. Previene que la propiedad width pueda ser inferior que min-width . Aplicable a: elementos de tipo bloque. Porcentajes: se refieren a la anchura del bloque contenedor.
+
+Max-width: define el ancho máximo que un elemento puede tener, max-width cambia el tamaño del elemento si el valor de width es mayor que el de max-width.
+
+```css
+
+section {
+    min-width: 300px;
+    max-width: 500px;
+    min-height: 300px;
+    max-height: 500px;
+}
+
+```
+
+---
  
+
+ # Position
+
+ "position" es una propiedad de CSS que se utiliza para controlar la posición de un elemento en una página web. Hay cuatro valores posibles para la propiedad "position": static, relative, absolute y fixed.
+
+**position: static** es el valor predeterminado y significa que el elemento se posicionará de manera estática en el flujo normal del documento HTML.
+
+**position: relative** significa que el elemento se posicionará en relación con su posición normal. Se pueden utilizar los valores "top", "right", "bottom" y "left" para ajustar la posición del elemento. Por ejemplo:
+
+```css
+div {
+  position: relative;
+  top: 20px;
+  left: 10px;
+}
+```
+
+**position: absolute** significa que el elemento se posicionará en relación con el primer elemento padre que tenga una posición diferente a "static". Si no hay ningún elemento padre con una posición diferente a "static", el elemento se posicionará en relación con el cuerpo del documento HTML. Se pueden utilizar los valores "top", "right", "bottom" y "left" para ajustar la posición del elemento. Por ejemplo:
+
+```css
+div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+```
+**position: fixed** significa que el elemento se posicionará en relación con la ventana del navegador y permanecerá en esa posición incluso cuando se desplace la página. Se pueden utilizar los valores "top", "right", "bottom" y "left" para ajustar la posición del elemento. Por ejemplo:
+
+```css
+div {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+```
+En resumen, la propiedad "position" en CSS se utiliza para controlar la posición de los elementos en una página web. Los valores posibles son static, relative, absolute y fixed, y se pueden utilizar las propiedades "top", "right", "bottom" y "left" para ajustar la posición de los elementos en relación con su posición normal, el primer elemento padre que tenga una posición diferente a "static", la ventana del navegador, etc.
