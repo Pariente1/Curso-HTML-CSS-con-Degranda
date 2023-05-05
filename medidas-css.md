@@ -143,10 +143,13 @@ section {
  # Position
 
  "position" es una propiedad de CSS que se utiliza para controlar la posición de un elemento en una página web. Hay cuatro valores posibles para la propiedad "position": static, relative, absolute y fixed.
+ 
+ ---
 
-**position: static** es el valor predeterminado y significa que el elemento se posicionará de manera estática en el flujo normal del documento HTML.
+**position: static**: es el valor predeterminado y significa que el elemento se posicionará de manera estática en el flujo normal del documento HTML.
 
-**position: relative** significa que el elemento se posicionará en relación con su posición normal. Se pueden utilizar los valores "top", "right", "bottom" y "left" para ajustar la posición del elemento. Por ejemplo:
+**position: relative**: el elemento se posicionará en relación con su posición normal. 
+>Se pueden utilizar los valores "top", "right", "bottom" y "left" para ajustar la posición del elemento. Por ejemplo:
 
 ```css
 div {
@@ -156,7 +159,9 @@ div {
 }
 ```
 
-**position: absolute** significa que el elemento se posicionará en relación con el primer elemento padre que tenga una posición diferente a "static". Si no hay ningún elemento padre con una posición diferente a "static", el elemento se posicionará en relación con el cuerpo del documento HTML. Se pueden utilizar los valores "top", "right", "bottom" y "left" para ajustar la posición del elemento. Por ejemplo:
+**position: absolute**:el elemento se posicionará en relación con el primer elemento padre que tenga una posición diferente a "static". 
+
+>Si no hay ningún elemento padre con una posición diferente a "static", el elemento se posicionará en relación con el cuerpo del documento HTML. Se pueden utilizar los valores "top", "right", "bottom" y "left" para ajustar la posición del elemento. Por ejemplo:
 
 ```css
 div {
@@ -166,7 +171,10 @@ div {
   transform: translate(-50%, -50%);
 }
 ```
-**position: fixed** significa que el elemento se posicionará en relación con la ventana del navegador y permanecerá en esa posición incluso cuando se desplace la página. Se pueden utilizar los valores "top", "right", "bottom" y "left" para ajustar la posición del elemento. Por ejemplo:
+> Es una buena practica poner al padre con **position: relative** para que el elemento lo tome como referencia.
+
+**position: fixed** significa que el elemento se posicionará en relación con la ventana del navegador y permanecerá en esa posición incluso cuando se desplace la página. 
+>Se pueden utilizar los valores "top", "right", "bottom" y "left" para ajustar la posición del elemento. Por ejemplo:
 
 ```css
 div {
@@ -175,4 +183,4 @@ div {
   right: 0;
 }
 ```
-En resumen, la propiedad "position" en CSS se utiliza para controlar la posición de los elementos en una página web. Los valores posibles son static, relative, absolute y fixed, y se pueden utilizar las propiedades "top", "right", "bottom" y "left" para ajustar la posición de los elementos en relación con su posición normal, el primer elemento padre que tenga una posición diferente a "static", la ventana del navegador, etc.
+En resumen, la propiedad "position" en CSS se utiliza para controlar la posición de los elementos en una página web. Los valores posibles son **static, relative, absolute y fixed**, y se pueden utilizar las propiedades "top", "right", "bottom" y "left" para ajustar la posición de los elementos en relación con su posición normal, el primer elemento padre que tenga una posición diferente a "static", la ventana del navegador, etc.
