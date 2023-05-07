@@ -184,3 +184,34 @@ div {
 }
 ```
 En resumen, la propiedad "position" en CSS se utiliza para controlar la posición de los elementos en una página web. Los valores posibles son **static, relative, absolute y fixed**, y se pueden utilizar las propiedades "top", "right", "bottom" y "left" para ajustar la posición de los elementos en relación con su posición normal, el primer elemento padre que tenga una posición diferente a "static", la ventana del navegador, etc.
+
+
+# Display
+
+En un elemento con **display:inline** no puede usar margin ni padding arriba ni abajo, solo derecha e izquierda. Tampoco se puede aplicar *width* o *height*.
+
+> Los elementos inline sólo ocupan el espacio necesario para mostrar sus contenidos.
+
+Elementos que usan inline de forma predeterminada:
+```html
+<!-- <a> <span> <img> <b> <i> <small> <cite> <code> <em> <strong> <br> <button> <input> <label> <select> <textarea> -->
+```
+
+En un elemento con **display:block** el contenido del elemento toma el 100% del *width*, se puede usar margin y padding por todos los lados.
+
+>Los elementos block ocupa todo el espacio disponible hasta el final de su línea, aunque sus contenidos no ocupen todo el sitio.
+
+Elementos que usan block de forma predeterminada:
+```html
+<!-- <div> <article> <section> <header> <footer> <aside> <table> <p> <video> <ul> <ol> <h1> <h2> <h3> <h4> <h5> <h6> -->
+```
+
+Los elementos **inline-block** conservan las propiedades mas importantes de los elementos inline y block. Se puede usar margin y padding por todos lados, así como darle width y height, y el contenido es del mismo tamaño que el elemento.
+
+>Etiquetas como *p* y *div* vienen por Default con un **display:block**
+Etiquetas como *span* viene por Default con un **display:inline**.
+
+Aqui una imagen de referencia:
+
+![insertando imagen](https://static.platzi.com/media/user_upload/inline-block-064aaa24-3393-40b9-9c2c-ae08ac2a117c.jpg)
+
