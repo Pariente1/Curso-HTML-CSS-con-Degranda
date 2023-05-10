@@ -215,3 +215,32 @@ Aqui una imagen de referencia:
 
 ![insertando imagen](https://static.platzi.com/media/user_upload/inline-block-064aaa24-3393-40b9-9c2c-ae08ac2a117c.jpg)
 
+
+# Display-Flex 
+
+# DisplayFlex en CSS
+
+## Propiedades en contenedores padre:
+
+- `display:flex;`
+- `flex-direccion: row | column | row-reverse | column-reverse`
+- `flex-wrap: nowrap | wrap | wrap-reverse`
+
+Esta siguiente propiedad es un atajo para escribir el flex-direccion y el flex-wrap en una sola línea de código:
+- `flex-flow: [dirección] [flex-wrap]`
+
+### Posicionar horizontalmente:
+
+- `justify-content: flex-star | flex-end | center | space-around | space-between`
+
+### Posicionar verticalmente:
+
+- `align-items: flex-star | flex-end | center | stretch | baseline`
+- `align-content: flex-star | flex-end | center | stretch | space-around | space-between`
+
+**Nota:** `align-content` se utiliza solo para varias filas de elementos, pero si es una sola línea se utiliza `align-items`.
+
+## Propiedades en elementos hijo:
+
+- `order: [número]` (para cambiar el orden de los elementos sin cambiar el orden semántico del HTML)
+- `align-self: flex-star | flex-end | center | stretch | baseline` (muy importante si el padre tiene declarado `flex-direccion: row` para acomodar verticalmente, o si es `flex-direccion: column` para acomodar horizontalmente)
